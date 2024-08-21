@@ -62,6 +62,9 @@
         </plugin>
         </plugins>
     </build>
-
+<properties>
+  <sonar.organization>sweet2024proj-1</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
   
 </project>
