@@ -66,5 +66,28 @@
   <sonar.organization>sweet2024proj-1</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
+
+
+
+
+<profiles>
+    <profile>
+        <id>sonar</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+        </activation>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>4.0.0.4121</version>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>
+
+
   
 </project>
